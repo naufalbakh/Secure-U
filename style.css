@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
 /* Custom CSS untuk tampilan dark */
 body {
+    font-family: 'Montserrat', sans-serif;
     background-color: #343a40;
     color: #fff;
 }
@@ -21,6 +25,10 @@ h1,
 h2,
 h3 {
     color: #fff;
+}
+
+h2{
+    font-weight: bold;
 }
 
 .card {
