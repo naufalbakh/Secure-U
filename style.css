@@ -71,6 +71,16 @@ p {
     /* Tambahkan border radius sesuai kebutuhan */
 }
 
+/* KONTEN BLOG */
+.card-image {
+    width: 100%;
+    object-fit: cover;
+    height: 290px;
+    /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    border-radius: 10px;
+    /* Tambahkan border radius sesuai kebutuhan */
+}
+
 /* Footer */
 footer {
     background-color: #212529;
@@ -115,7 +125,6 @@ footer {
     background-color: white;
 }
 
-
 .social-media {
     margin-top: 20px;
 }
@@ -136,13 +145,12 @@ footer {
     margin-top: 5px;
 }
 
-
 .welcome-section {
-    background-image: url('img/bg-image.jpg');
+    background-image: url('img/bg-image3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 93vh;
+    height: 90vh;
 }
 
 .footer-section {
