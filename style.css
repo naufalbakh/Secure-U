@@ -1,0 +1,57 @@
+/* Custom CSS untuk tampilan dark */
+body {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Override gaya default Bootstrap jika diperlukan */
+nav {
+    background-color: #212529;
+}
+
+nav a {
+    color: #fff;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+    color: #fff;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+    height: 260px;
+    /* Sesuaikan tinggi gambar sesuai kebutuhan */
+    border-radius: 10px;
+    /* Tambahkan border radius sesuai kebutuhan */
+}
+
+footer {
+    background-color: #212529;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.welcome-section {
+    background-image: url('/img/bg-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 93vh;
+}
