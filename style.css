@@ -4,7 +4,7 @@
 /* Custom CSS untuk tampilan dark */
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #343a40;
+    background-color: #1C1B1B;
     color: #fff;
 }
 
@@ -17,6 +17,14 @@ nav a {
     color: #fff;
 }
 
+.logo {
+    width: 45.42px;
+    /* Sesuaikan ukuran logo sesuai kebutuhan */
+    height: 56.49px;
+    /* Sesuaikan ukuran logo sesuai kebutuhan */
+    /* Tambahkan gaya tambahan jika diperlukan */
+}
+
 section {
     padding: 40px 0;
 }
@@ -27,8 +35,26 @@ h3 {
     color: #fff;
 }
 
-h2{
+h2 {
+    font-size: 23.4pt;
     font-weight: bold;
+}
+
+p {
+    font-family: 'Square721 BT', sans-serif;
+    font-size: 14.4pt;
+    color: #fff;
+}
+
+.kecil-text {
+    font-family: 'Square721 BT', sans-serif;
+    font-size: 8.9pt;
+    color: #fff;
+
+}
+
+.blue-text {
+    color: #3AAEF9;
 }
 
 .card {
