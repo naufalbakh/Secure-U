@@ -138,7 +138,7 @@ footer {
 
 
 .welcome-section {
-    background-image: url('/img/bg-image.jpg');
+    background-image: url('img/bg-image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -146,14 +146,14 @@ footer {
 }
 
 .footer-section {
-    background-image: url('/img/footer.png');
+    background-image: url('img/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home-section {
-    background-image: url('/img/bg-home.png');
+    background-image: url('img/bg-home.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
