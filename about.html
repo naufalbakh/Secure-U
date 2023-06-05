@@ -67,36 +67,55 @@
                     <button type="submit" class="btn btn-primary">Kirim Saran</button>
                 </form>
             </div>
+            <!-- Form Saran -->
             <div class="col-md-6 text-center">
-                <form action="">
-                </form>
-                </div>
-                </div>
-                <div class="container text-center">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9718480804871!2d112.60658509240092!3d-7.942019667910524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78833882809e31%3A0xf55cd6d748a43e35!2sMasik%20Rent!5e0!3m2!1sid!2sid!4v1685954742233!5m2!1sid!2sid"
-                        width="100%" height="279px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>F
-                </div>
-                <div class="row p-5 mt-5">
-                    <div class="col-md-6">
-                        <h2>Rating Layanan</h2>
-                        <p>Berikan penilaian Anda tentang layanan kami:</p>
-                        <div class="rating">
-                            <input type="radio" id="star5" name="rating" value="5">
-                            <label for="star5" title="Sangat Baik">5 stars</label>
-                            <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" title="Baik">4 stars</label>
-                            <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" title="Cukup">3 stars</label>
-                            <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" title="Buruk">2 stars</label>
-                            <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" title="Sangat Buruk">1 star</label>
+                <div class="form-container p-5 bg-dark rounded-3">
+                    <form>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="nama" name="nama" class="form-control form-control-sm" required>
+                            <label for="nama">Nama:</label>
                         </div>
-                    </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" id="email" name="email" class="form-control form-control-sm" required>
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" id="judul" name="judul" class="form-control form-control-sm" required>
+                            <label for="judul">Judul:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea id="pesan" name="pesan" class="form-control form-control-sm" rows="5" required></textarea>
+                            <label for="pesan">Pesan:</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm">Kirim</button>
+                    </form>
                 </div>
-
+            </div>
+        </div>
+        <div class="container text-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246.9718480804871!2d112.60658509240092!3d-7.942019667910524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78833882809e31%3A0xf55cd6d748a43e35!2sMasik%20Rent!5e0!3m2!1sid!2sid!4v1685954742233!5m2!1sid!2sid"
+                width="100%" height="279px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="row p-5 mt-5">
+            <div class="col-md-6">
+                <h2>Rating Layanan</h2>
+                <p>Berikan penilaian Anda tentang layanan kami:</p>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5" title="Sangat Baik">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" title="Baik">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" title="Cukup">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" title="Buruk">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" title="Sangat Buruk">1 star</label>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -148,6 +167,6 @@
         crossorigin="anonymous"></script>
     <!-- Custom Script -->
     <script src="script.js"></script>
-    </body>
-    
-    </html>
+</body>
+
+</html>
