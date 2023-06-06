@@ -48,6 +48,34 @@
     </nav>
 
     <!-- Services Section -->
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="text-center">
+                    <h2 class="text-center">Konsultasi <span class="blue-text">Cyber Security</span></h2>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title text-light">Chat atau Helpdesk</h5>
+                        <p class="card-text">Kami menyediakan layanan konsultasi cyber security melalui chat atau
+                            helpdesk.
+                            Tim ahli kami siap membantu Anda dalam menjawab pertanyaan dan memberikan solusi terkait
+                            keamanan
+                            informasi.</p>
+                        <p class="card-text">Tingkatkan keamanan sistem dan jaringan Anda dengan berdiskusi dengan para
+                            ahli
+                            kami.</p>
+                        <p class="card-text">Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan atau
+                            masalah
+                            terkait cyber security.</p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" id="chatButton" class="btn btn-primary">Chat Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="mt-auto footer-section">
@@ -99,6 +127,50 @@
         crossorigin="anonymous"></script>
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
-    </body>
+    <script>
+        function openChat() {
+            // Periksa apakah Tawk_API sudah terdefinisi
+            if (typeof Tawk_API === 'undefined') {
+                // Tawk.to belum dimuat, tunggu hingga selesai
+                window.addEventListener('DOMContentLoaded', function () {
+                    openChat(); // Panggil kembali fungsi openChat setelah Tawk.to dimuat
+                });
+                return;
+            }
+
+            // Membuka jendela chat
+            Tawk_API.toggle();
+
+            // Memicu pesan salam (greetings)
+            Tawk_API.onLoad = function () {
+                Tawk_API.toggleChatMinimized(false); // Maksimalkan jendela chat
+                Tawk_API.sendMessage('Welcome to our website! How can we assist you today? Feel free to ask any questions or share your concerns.');
+            };
+        }
+
+        // Panggil fungsi openChat() saat halaman selesai dimuat
+        window.addEventListener('DOMContentLoaded', function () {
+            openChat();
+        });
+    </script>
+
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/647ebde094cf5d49dc5c0563/1h27hbdlo';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</body>
+
+
 
 </html>
